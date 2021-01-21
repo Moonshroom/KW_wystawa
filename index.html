@@ -214,22 +214,22 @@
                 const wall = new THREE.Mesh(wallGeometry, wallMaterial);
                 wall.position.set(0,0,-30)
 
-                const firstPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
-                const firstPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a1.jpg") })
+                const firstPosterGeometry = new THREE.BoxBufferGeometry( 12, 18, 0.5 ).toNonIndexed();
+                const firstPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/Kornelia_Wasilewska_sitodruk.jpg") })
                 const firstPoster = new THREE.Mesh(firstPosterGeometry, firstPosterMaterial);
                 firstPoster.position.set(0,15,1)
 
-                const secondPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
-                const secondPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a2.jpg") })
-                const secondPoster = new THREE.Mesh(secondPosterGeometry, secondPosterMaterial);
-                secondPoster.position.set(15,15,1)
+                // const secondPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
+                // const secondPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a2.jpg") })
+                // const secondPoster = new THREE.Mesh(secondPosterGeometry, secondPosterMaterial);
+                // secondPoster.position.set(15,15,1)
 
-                const thirdPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
-                const thirdPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a3.jpg") })
-                const thirdPoster = new THREE.Mesh(thirdPosterGeometry, thirdPosterMaterial);
-                thirdPoster.position.set(-15,15,1)
-                
-					wall.add( firstPoster, secondPoster, thirdPoster );
+                // const thirdPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
+                // const thirdPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a3.jpg") })
+                // const thirdPoster = new THREE.Mesh(thirdPosterGeometry, thirdPosterMaterial);
+                // thirdPoster.position.set(-15,15,1)
+                	// wall.add(secondPoster, thirdPoster);
+					wall.add( firstPoster );
 					scene.add( wall );
 					objects.push( wall, room );
 				//
