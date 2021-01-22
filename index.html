@@ -219,19 +219,19 @@
                 const firstPoster = new THREE.Mesh(firstPosterGeometry, firstPosterMaterial);
                 firstPoster.position.set(0,15,1)
 
-                // const secondPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
-                // const secondPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a2.jpg") })
-                // const secondPoster = new THREE.Mesh(secondPosterGeometry, secondPosterMaterial);
-                // secondPoster.position.set(15,15,1)
+                const secondPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
+                const secondPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a2.jpg") })
+                const secondPoster = new THREE.Mesh(secondPosterGeometry, secondPosterMaterial);
+                secondPoster.position.set(15,15,1)
 
-                // const thirdPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
-                // const thirdPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a3.jpg") })
-                // const thirdPoster = new THREE.Mesh(thirdPosterGeometry, thirdPosterMaterial);
-                // thirdPoster.position.set(-15,15,1)
-                	// wall.add(secondPoster, thirdPoster);
-					wall.add( firstPoster );
-					scene.add( wall );
-					objects.push( wall, room );
+                const thirdPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
+                const thirdPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a3.jpg") })
+                const thirdPoster = new THREE.Mesh(thirdPosterGeometry, thirdPosterMaterial);
+                thirdPoster.position.set(-15,15,1)
+                	
+				wall.add(firstPoster, secondPoster, thirdPoster);
+				scene.add( wall );
+				objects.push( wall, room );
 				//
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
