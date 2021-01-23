@@ -214,18 +214,18 @@
                 const wall = new THREE.Mesh(wallGeometry, wallMaterial);
                 wall.position.set(0,0,-30)
 
-                const firstPosterGeometry = new THREE.BoxBufferGeometry( 12, 18, 0.5 ).toNonIndexed();
-                const firstPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/Kornelia_Wasilewska_sitodruk.jpg") })
+                const firstPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 0.5 ).toNonIndexed();
+                const firstPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/Kornelia_Wasilewska_sitodruk-2.jpg") })
                 const firstPoster = new THREE.Mesh(firstPosterGeometry, firstPosterMaterial);
                 firstPoster.position.set(0,15,1)
 
-                const secondPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
-                const secondPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a2.jpg") })
+                const secondPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 0.5 ).toNonIndexed();
+                const secondPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/Kornelia_Wasilewska_sitodruk-1.jpg") })
                 const secondPoster = new THREE.Mesh(secondPosterGeometry, secondPosterMaterial);
                 secondPoster.position.set(15,15,1)
 
-                const thirdPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 1 ).toNonIndexed();
-                const thirdPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/a3.jpg") })
+                const thirdPosterGeometry = new THREE.BoxBufferGeometry( 10, 15, 0.5 ).toNonIndexed();
+                const thirdPosterMaterial = new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load("./assets/Kornelia_Wasilewska_sitodruk-3.jpg") })
                 const thirdPoster = new THREE.Mesh(thirdPosterGeometry, thirdPosterMaterial);
                 thirdPoster.position.set(-15,15,1)
                 	
